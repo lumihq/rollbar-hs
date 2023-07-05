@@ -49,6 +49,7 @@ import Network.HTTP.Types (Query)
 import Network.Socket     (SockAddr(SockAddrInet), tupleToHostAddress)
 
 import Rollbar.Item.MissingHeaders
+import qualified Rollbar.Internal.AesonCompat as AesonCompat
 
 import Text.Read (readMaybe)
 
@@ -103,7 +104,7 @@ queryKVs = fmap go
     go (key', val') = do
         key <- myDecodeUtf8 key'
         let val = val' >>= myDecodeUtf8
-        pure (key .= val)
+        pure (AesonCompat.keyFromText key .= val)
 
 -- | The HTTP Verb
 newtype Method

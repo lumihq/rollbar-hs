@@ -1,3 +1,4 @@
+{-# LANGUAGE CPP #-}
 {-# LANGUAGE DataKinds #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
 {-# LANGUAGE KindSignatures #-}
@@ -33,6 +34,8 @@ import qualified Data.ByteString       as BS
 import qualified Data.ByteString.Char8 as BSC8
 import qualified Data.Text             as T
 import qualified Data.Text.Encoding    as TE
+
+import qualified Rollbar.Internal.AesonCompat as AesonCompat
 
 -- | The request headers with some missing
 --
@@ -70,7 +73,7 @@ requestHeadersKVs = fmap go
     go (key', val') = do
         key <- myDecodeUtf8 $ original key'
         val <- myDecodeUtf8 val'
-        pure (key .= val)
+        pure (AesonCompat.keyFromText key .= val)
 
 myDecodeUtf8 :: BS.ByteString -> Maybe T.Text
 myDecodeUtf8 = either (const Nothing) Just . TE.decodeUtf8'

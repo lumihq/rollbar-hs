@@ -9,6 +9,7 @@ import           Data.Text           (Text)
 
 import           Rollbar.Item
 import           Rollbar.QuickCheck  ()
+import qualified Rollbar.Internal.AesonCompat as AesonCompat
 
 import           Test.QuickCheck     (conjoin, quickCheck)
 
@@ -38,7 +39,7 @@ requiredBodyKeys = ["trace", "trace_chain", "message", "crash_report"]
 
 key :: Text -> Value -> [(Text, Value)]
 key k = \case
-  Object o -> case Data.HashMap.Strict.lookupDefault Null k o of
-    Object o -> Data.HashMap.Strict.toList o
+  Object o -> case Data.HashMap.Strict.lookupDefault Null k $ AesonCompat.keyMapToHashMap o of
+    Object o -> Data.HashMap.Strict.toList $ AesonCompat.keyMapToHashMap o
     _        -> mempty
   _ -> mempty
