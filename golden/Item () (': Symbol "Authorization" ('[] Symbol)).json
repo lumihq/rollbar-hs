@@ -1,100 +1,100 @@
 {
-    "seed": 7114407485812634252,
     "samples": [
         {
+            "access_token": "6-\u0008RDI\u0006\u0003>Q1|\u0017\u00001d\u0000a[",
             "data": {
-                "notifier": {
-                    "name": "rollbar-hs",
-                    "version": "0.3.1.0"
-                },
-                "platform": "linux",
-                "environment": "HB\u0010BuQ\u0017\u00064d*HE\u000b9\u0019\u001b*\u000e\u0013",
                 "body": {
                     "message": {
-                        "data": [],
-                        "body": ""
+                        "body": "'=Wg\u0006;Ub\u000c\u0003\u00062%\u0003ecM\u0001U",
+                        "data": []
                     }
                 },
+                "environment": "POw25\u0008B\"mmw&1b\u0011\u0000\twkE(AMd-\u0012",
                 "language": "haskell",
-                "level": "critical"
-            },
-            "access_token": "9d"
+                "level": "error",
+                "notifier": {
+                    "name": "rollbar-hs",
+                    "version": "0.3.2.0"
+                },
+                "platform": "darwin"
+            }
         },
         {
+            "access_token": "X1\u001fPRP9\u0001\u001d\u0003\u0012\u0012\u0007,R8X9vz\u0015<P\u0016p\u000f[R,",
             "data": {
-                "notifier": {
-                    "name": "rollbar-hs",
-                    "version": "0.3.1.0"
-                },
-                "platform": "linux",
-                "environment": "\u001dGesd@(b)ppm/Z",
                 "body": {
                     "message": {
-                        "data": [],
-                        "body": ")\u0011"
+                        "body": "\u0016zG.N\u0008OdN\r\u001e\n+X lu\u0013zD'%[vn\u000cP\u001bd",
+                        "data": []
                     }
                 },
+                "environment": "M\\;\u001a",
                 "language": "haskell",
-                "level": "debug"
-            },
-            "access_token": "\u0018NYo"
+                "level": "warning",
+                "notifier": {
+                    "name": "rollbar-hs",
+                    "version": "0.3.2.0"
+                },
+                "platform": "darwin"
+            }
         },
         {
+            "access_token": "r\u0011G$\u0011\u000fyVvSU\u001f>5Ip\u00043\u0018+",
             "data": {
-                "notifier": {
-                    "name": "rollbar-hs",
-                    "version": "0.3.1.0"
-                },
-                "platform": "linux",
-                "environment": "/dt",
                 "body": {
                     "message": {
-                        "data": [],
-                        "body": ""
+                        "body": "V\u001f\u0000ve",
+                        "data": []
                     }
                 },
+                "environment": "9\u00009\nx;^%\u0001\u0018",
                 "language": "haskell",
-                "level": "debug"
-            },
-            "access_token": "\nwz\u0017"
+                "level": "debug",
+                "notifier": {
+                    "name": "rollbar-hs",
+                    "version": "0.3.2.0"
+                },
+                "platform": "darwin"
+            }
         },
         {
+            "access_token": "\u0013Z+g\u0004}>_\u00110I\u001buas[/=[39?\u0019t\u0002\u0003$N",
             "data": {
-                "notifier": {
-                    "name": "rollbar-hs",
-                    "version": "0.3.1.0"
-                },
-                "platform": "linux",
-                "environment": "\u0003+(up!I",
                 "body": {
                     "message": {
-                        "data": [],
-                        "body": "j+&e\"\u001eqz3pc,\u000elr\u0015+';\u0013\u0017ot\"_\t\u000bm\u0012"
+                        "body": "-^\tZ",
+                        "data": []
                     }
                 },
+                "environment": "/w\u000eXfhzyt.\u000f\u000b3y^",
                 "language": "haskell",
-                "level": "error"
-            },
-            "access_token": "fqoNui?+\u000fyAu\u0005>\u0013a"
+                "level": "info",
+                "notifier": {
+                    "name": "rollbar-hs",
+                    "version": "0.3.2.0"
+                },
+                "platform": "darwin"
+            }
         },
         {
+            "access_token": "\u001c5\u0014<\u0010)\u0005jGu\u0016T\"l\u000b\u0018GY\u0017gv\u0000@C\u0016H",
             "data": {
-                "notifier": {
-                    "name": "rollbar-hs",
-                    "version": "0.3.1.0"
-                },
-                "platform": "linux",
-                "environment": "V\u001csj\u001edR`T4?\u000eJ\u000cf",
                 "body": {
                     "message": {
-                        "data": [],
-                        "body": "\u00138=\u0008]\u00030"
+                        "body": "FL(\u0006>!LT\u0008*x!x\\=4Rn6fXj3zL",
+                        "data": []
                     }
                 },
+                "environment": "C{{\u0013<RNF?*<:D$@\\k",
                 "language": "haskell",
-                "level": "error"
-            },
-            "access_token": ".=#\n$\rD4 /1*c *O"
+                "level": "warning",
+                "notifier": {
+                    "name": "rollbar-hs",
+                    "version": "0.3.2.0"
+                },
+                "platform": "darwin"
+            }
         }
-    ]
+    ],
+    "seed": 527511337
 }

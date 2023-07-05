@@ -16,6 +16,7 @@ import           Prelude                     hiding (error)
 
 import           Rollbar.Item.MissingHeaders (MissingHeaders (..))
 import           Rollbar.QuickCheck          ()
+import qualified Rollbar.Internal.AesonCompat as AesonCompat
 
 import           Test.QuickCheck             (conjoin, quickCheck)
 
@@ -88,7 +89,7 @@ prop_encodingAllHeadersAreRemoved hs =
 
 keys :: Value -> HashSet Text
 keys = \case
-  Object o -> Data.HashSet.fromMap (void o)
+  Object o -> Data.HashSet.fromMap (void $ AesonCompat.keyMapToHashMap o)
   _ -> mempty
 
 notMember x = not . Data.HashSet.member x

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.2.0 (unreleased)
+
+* Support `aeson` version 2+
+* Suppor `text` version 2+
+
 ## 0.3.1.0
 
 * [Drop some test dependencies](https://github.com/joneshf/rollbar-hs/pull/12)
